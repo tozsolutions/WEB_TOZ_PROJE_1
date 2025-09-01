@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TOZ Solutions Web Project 1 - Modern Web Application">
+    <meta name="keywords" content="TOZ Solutions, web development, modern web, javascript">
+    <meta name="author" content="TOZ Solutions">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <title>TOZ Solutions - Web Project 1</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./src/css/main.css" as="style">
+    <link rel="preload" href="./src/js/main.js" as="script">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <a href="#" class="nav__logo">
+                    <span class="nav__logo-text">TOZ Solutions</span>
+                </a>
+                
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Ana Sayfa</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Hakkımızda</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Hizmetler</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">İletişim</a>
+                        </li>
+                    </ul>
+                    
+                    <i class="fas fa-times nav__close" id="nav-close"></i>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <h1 class="home__title">
+                        TOZ Solutions'a <br>
+                        <span class="home__title-color">Hoş Geldiniz</span>
+                    </h1>
+                    <p class="home__description">
+                        Modern web teknolojileri ile güçlü ve etkili çözümler sunuyoruz. 
+                        İşletmenizi dijital dünyada öne çıkarıyoruz.
+                    </p>
+                    
+                    <div class="home__buttons">
+                        <a href="#contact" class="button button--primary">
+                            İletişime Geç
+                        </a>
+                        <a href="#portfolio" class="button button--outline">
+                            Çalışmalarımız
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="home__img">
+                    <div class="home__blob">
+                        <div class="home__blob-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">Hakkımızda</h2>
+                <span class="section__subtitle">Kim Olduğumuzu Keşfedin</span>
+
+                <div class="about__container grid">
+                    <div class="about__data">
+                        <p class="about__description">
+                            TOZ Solutions olarak, modern web teknolojileri ve yenilikçi yaklaşımlarla 
+                            müşterilerimize en iyi hizmeti sunmayı hedefliyoruz. Deneyimli ekibimizle 
+                            projelerin başından sonuna kadar profesyonel destek sağlıyoruz.
+                        </p>
+                        
+                        <div class="about__buttons">
+                            <a href="#contact" class="button button--primary">
+                                Bizimle Çalışın
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="about__img">
+                        <div class="about__blob">
+                            <div class="about__blob-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section__title">Hizmetlerimiz</h2>
+                <span class="section__subtitle">Sunduğumuz Çözümler</span>
+
+                <div class="services__container grid">
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="services__title">Web Geliştirme</h3>
+                        <p class="services__description">
+                            Modern ve responsive web siteleri geliştiriyoruz. 
+                            HTML5, CSS3, JavaScript ve modern frameworkler kullanıyoruz.
+                        </p>
+                    </div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="services__title">Mobil Uyumlu Tasarım</h3>
+                        <p class="services__description">
+                            Tüm cihazlarda mükemmel görünüm sağlayan 
+                            responsive tasarımlar oluşturuyoruz.
+                        </p>
+                    </div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="services__title">SEO Optimizasyonu</h3>
+                        <p class="services__description">
+                            Web sitenizin arama motorlarında üst sıralarda 
+                            yer almasını sağlayacak SEO stratejileri uyguluyoruz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Son Çalışmalarımız</span>
+
+                <div class="portfolio__container grid">
+                    <div class="portfolio__content">
+                        <div class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Modern Web Sitesi</h3>
+                                <p class="portfolio__description">
+                                    Responsive tasarım ve modern teknolojiler
+                                </p>
+                                <a href="#" class="button button--small button--primary">
+                                    Detaylar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content">
+                        <div class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">E-Ticaret Platformu</h3>
+                                <p class="portfolio__description">
+                                    Güvenli ve hızlı alışveriş deneyimi
+                                </p>
+                                <a href="#" class="button button--small button--primary">
+                                    Detaylar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content">
+                        <div class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Kurumsal Web Sitesi</h3>
+                                <p class="portfolio__description">
+                                    Profesyonel kurumsal kimlik
+                                </p>
+                                <a href="#" class="button button--small button--primary">
+                                    Detaylar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">İletişim</h2>
+                <span class="section__subtitle">Bizimle İletişime Geçin</span>
+
+                <div class="contact__container grid">
+                    <div class="contact__information">
+                        <div class="contact__info">
+                            <i class="fas fa-phone contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Telefon</h3>
+                                <span class="contact__subtitle">+90 XXX XXX XX XX</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__info">
+                            <i class="fas fa-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">E-posta</h3>
+                                <span class="contact__subtitle">info@tozsolutions.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__info">
+                            <i class="fas fa-map-marker-alt contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Adres</h3>
+                                <span class="contact__subtitle">İstanbul, Türkiye</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="#" class="contact__form grid" id="contact-form">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="contact-name" class="contact__label">Ad Soyad</label>
+                                <input type="text" id="contact-name" class="contact__input" required>
+                            </div>
+                            
+                            <div class="contact__content">
+                                <label for="contact-email" class="contact__label">E-posta</label>
+                                <input type="email" id="contact-email" class="contact__input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__content">
+                            <label for="contact-project" class="contact__label">Proje</label>
+                            <input type="text" id="contact-project" class="contact__input">
+                        </div>
+                        
+                        <div class="contact__content">
+                            <label for="contact-message" class="contact__label">Mesaj</label>
+                            <textarea id="contact-message" cols="0" rows="7" class="contact__input" required></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="button button--primary">
+                                <i class="fas fa-paper-plane button__icon"></i>
+                                Mesaj Gönder
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">TOZ Solutions</h1>
+                    <span class="footer__subtitle">Web Geliştirme Uzmanı</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Hizmetler</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">İletişim</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="#" class="footer__social" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__social" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__social" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__social" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">© 2024 TOZ Solutions. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Main JavaScript -->
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
