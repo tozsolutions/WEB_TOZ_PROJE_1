@@ -1,0 +1,55 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  code-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        cd server && npm ci
+        cd ../client && npm ci
+
+    - name: Run ESLint on server
+      run: |
+        cd server
+        npm run lint
+
+    - name: Run ESLint on client
+      run: |
+        cd client
+        npm run lint
+
+    - name: Run Prettier check on server
+      run: |
+        cd server
+        npx prettier --check "src/**/*.{ts,tsx,js,jsx,json,md}"
+
+    - name: Run Prettier check on client
+      run: |
+        cd client
+        npx prettier --check "src/**/*.{ts,tsx,js,jsx,json,md}"
+
+    - name: TypeScript check server
+      run: |
+        cd server
+        npm run type-check || npx tsc --noEmit
+
+    - name: TypeScript check client
+      run: |
+        cd client
+        npm run type-check
