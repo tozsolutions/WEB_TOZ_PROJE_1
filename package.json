@@ -1,0 +1,42 @@
+{
+  "name": "web-toz-proje-1",
+  "version": "1.0.0",
+  "description": "TOZ Solutions Web Project 1 - Modern Web Application",
+  "main": "src/js/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier --write src/**/*.{js,css,html}",
+    "test": "jest",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "web",
+    "javascript",
+    "html",
+    "css",
+    "toz-solutions",
+    "modern-web"
+  ],
+  "author": "TOZ Solutions",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "jest": "^29.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

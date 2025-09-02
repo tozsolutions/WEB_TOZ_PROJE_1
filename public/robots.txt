@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive directories
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /tests/
+Disallow: /coverage/
+
+# Sitemap location
+Sitemap: https://your-domain.com/sitemap.xml
